@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-holder {
+  position: relative;
+  max-width: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.image-swipe-prev,
+.image-swipe-next {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  z-index: 10;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  transition: background-color 0.2s;
+}
+
+.image-swipe-prev:hover,
+.image-swipe-next:hover {
+  background-color: rgb(0, 0, 0, 0.15);
+}
+
+.image-swipe-next {
+  top: 0px;
+  left: 400px;
+}
+
+.image-holder {
+  position: relative;
+  height: 500px;
+  width: 1500px;
+  display: flex;
+  z-index: 1;
+}
